@@ -1,0 +1,26 @@
+database:
+  driverClass: org.postgresql.Driver
+  user: webapiuser
+  password: weAreTheWaking
+  url: jdbc:postgresql:testdb
+
+  properties:
+    charSet: UTF-8
+
+  maxWaitForConnection: 1s
+  validationQuery: "/* Postgres Health Check */ SELECT 1"
+  minSize: 8
+  maxSize: 32
+  checkConnectionWhileIdle: false
+
+server:
+  adminMinThreads: 1
+  adminMaxThreads: 64
+  applicationConnectors:
+    - type: http
+      port: 8080
+
+logging:
+  level: INFO
+  loggers:
+    io.brendan: DEBUG
