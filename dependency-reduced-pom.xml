@@ -132,7 +132,7 @@
         </executions>
         <configuration>
           <createDependencyReducedPom>true</createDependencyReducedPom>
-          <minimizeJar>true</minimizeJar>
+          <minimizeJar>false</minimizeJar>
           <promoteTransitiveDependencies>true</promoteTransitiveDependencies>
         </configuration>
       </plugin>
