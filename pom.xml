@@ -91,7 +91,6 @@
             <version>1.0.2</version>
         </dependency>
 
-
     </dependencies>
 
     <build>
@@ -208,7 +207,7 @@
                 <version>${maven.shade.version}</version>
                 <configuration>
                     <createDependencyReducedPom>true</createDependencyReducedPom>
-                    <minimizeJar>true</minimizeJar>
+                    <minimizeJar>false</minimizeJar> <!-- Hibernate dependency on Dropwizard force Java7 support-->
                     <promoteTransitiveDependencies>true</promoteTransitiveDependencies>
                 </configuration>
                 <executions>
